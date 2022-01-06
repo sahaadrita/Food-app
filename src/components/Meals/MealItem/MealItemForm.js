@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState} from 'react';
 import classes from './MealItemForm.module.css'
 import Input from '../../UI/Input';
 const MealItemForm=props=>{
@@ -6,7 +6,7 @@ const MealItemForm=props=>{
  const amountInputRef=useRef();
 
     const submitHandler=event=>{
-     event.prevent.default();
+     event.preventDefault();
 
      const enteredAmount=amountInputRef.current.value;
      const enteredAmountNumber=+enteredAmount;
